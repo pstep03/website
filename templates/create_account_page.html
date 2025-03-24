@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+    <body class="create-account-page">
+    <div class="container">
+        <h2>Create an Account</h2>
+
+        <!-- Error message if username already exists in database. -->
+        {% if error_message %}
+            <div class="error-message">{{ error_message }}</div>
+        {% endif %}
+
+        <!-- HTML for the text boxes and buttons on the create account page. -->
+        <form action="/form_submmission/" method="post">
+            <input type="text" id="username" name="username" placeholder="Create a Username" required>
+            <input type="password" id="password" name="password" placeholder="Create a Password" required>
+            <input type="submit" value="Submit">
+        </form>
+        <div id="lastLogin"></div>
+    </div>
+    <script src="/static/js/script.js"></script>
+    </body>
+</html>

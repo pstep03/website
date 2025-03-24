@@ -1,0 +1,110 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom, black, #800080);
+    margin: 0;
+    padding: 0;
+}
+
+.starting-page, .create-account-page, .home-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home-page {
+    flex-direction: column;
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    width: 550px;
+    padding: 40px;
+    background: linear-gradient(to bottom, #222222, #3a3a3a);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.1);
+    animation: slideUpFadeIn 0.6s ease-out;
+    position: fixed;
+}
+
+h2 {
+    margin-top: 0;
+    text-align: center;
+    color: #0000;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: linear-gradient(to left, rgb(167, 167, 167), #cfcfcf);
+    font-size: 16px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    background: linear-gradient(to left, rgb(26, 26, 26), #490249);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to left, rgb(26, 26, 26), #490249);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: rgba(22, 22, 22, 0.466);
+    font-size: 14px;
+}
+
+#lastLogin {
+    text-align: center;
+    color: #3f3f3f;
+    font-size: 14px;
+}
+
+.error-message {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.home-page #content {
+    text-align: center;
+}
+
+.starting-page,
+.create-account-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
