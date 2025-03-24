@@ -4,8 +4,6 @@ This project provides a working login system for any website. It handles user au
 
 ## Requirements  
 
-## Download the project:
-
 Click **Code** and **Download ZIP** on GitHub
 Extract the ZIP file
 
